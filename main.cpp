@@ -126,11 +126,10 @@ int main(int argc, char** argv) {
 #pragma omp barrier
         cash = convertYear(smi, dollars);//no parallel
 
-        // Call for Linear regression
         linearRegression(cash, year);
     }
     else {
-        std::cout << "Insuficcient arguments.";
+        std::cout << "Argumentos insuficientes";
     }
     //END
     std::cout << std::endl;
